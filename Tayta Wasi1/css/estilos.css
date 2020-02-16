@@ -1,0 +1,282 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body{
+	width:100%;
+	margin: 0 ;
+	font-family: 'Lato', sans-serif;
+}
+img{
+	max-width: 100%;
+}
+contenedor{
+	max-width: 120rem;
+	margin: 0 auto;
+	
+}
+h1{
+
+	font-size: 3.3rem;
+}
+
+
+.clearfix {
+  overflow: auto;
+}
+.barra{
+	width: 95%;
+	margin-top: 0.5rem;
+	text-align: center;
+
+}
+@media(min-width: 768px){
+.barra{
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+	
+}}
+.navegacion a{
+    margin-top: 0.2rem;
+	text-decoration: none;
+	color: #000;
+	display: block;
+
+}
+@media(min-width: 768px){
+	.navegacion a{
+		display: inline-block;
+		margin-right: 1rem;
+     }
+    .navegacion a:last-of-type{
+    	margin: 0;
+    }
+    
+}
+.navegacion a:hover{
+	color: #4DD0E1;
+}
+@media(min-width: 768px){
+	.barra img{
+		margin-left: 5rem;
+		margin-bottom : 10px;
+	}
+}
+
+/**parrallax**/
+
+.parallax::before{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+    background-attachment: fixed;
+    -webkit-filter: brightness(.8);
+    filter: brightness(.8);
+
+}
+
+.site-banner{
+	position: relative;
+	height: auto;
+	margin-bottom: 2rem;
+}
+.site-banner::before{
+	background-image: url(../img/banner2.jpg);
+	content: '';
+	height: 37rem;
+	
+}
+@media(min-width: 768px){
+	.site-banner::before{
+	height: 40rem;
+}
+
+}
+
+.site-banner .contenido {
+padding: 51px 10px;
+text-align: center;
+position: relative;}
+
+@media(min-width: 768px){
+.site-banner .contenido{
+padding: 50px 150px;
+text-align: center;
+position: relative;
+}
+}
+
+@media(min-width: 768px){
+ .site-banner .contenido h1{
+ 	font-size: 8rem;
+    color: #fff;
+    font-family: 'Almarai', sans-serif;
+ }}
+ .site-banner .contenido h1{
+    color: #fff;
+ }
+
+ /**animacion tayta wasi**/
+ 
+@media(min-width: 768px){
+	.contenidoletras{
+      display: flex;
+      align-items: center;
+      margin-top: 5rem;
+      margin-left: 14rem;
+      padding: 10px 150px;
+      width: 50rem;
+	}
+}
+.contenidoletras{
+	display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    padding: 0px 10px;
+}
+/**mamacotacahi**/
+@media(min-width: 768px) {
+	.mamacotacachi{
+		display: flex;
+		align-items: center;
+		background-color: #DFECE5;
+
+}
+	.imagen1{
+		width: 26rem;
+		margin-left: 6rem;
+	}
+	.letras1{
+		margin-right: 2rem;
+		margin-left : 5rem;
+		text-align: center;
+
+
+	}
+	
+	.letras1 p{
+
+		font-size: 20px;
+	}}
+
+.letras1{
+	background-color: #DFECE5;
+	margin-top: -1rem;
+	text-align: center;
+}
+.letras1 h1{
+    padding: 1px 10px;
+	margin-bottom: 1rem;
+	font-size: 40px;
+	line-height: 4.5rem;
+	text-shadow: 0 0 10px  #fff;
+}
+.letras1 p{
+	line-height: 1.4rem;
+	margin-top: -1rem;
+}
+/**postres**/ 
+@media(min-width: 768px){
+	.postres{
+		background-color: #000;
+		margin-top: 1rem;
+		display: flex;
+		align-items: center;
+	}
+	.letras2{
+		color: #fff;
+		text-align: center;
+		margin-left: 2rem;
+	}
+	.imagen2{
+		width: 41rem;
+       margin-left: 2rem;
+	}
+	.letras2 h1{
+		text-shadow: 0 0 8px #fff;
+	}
+}
+.letras2 {
+display: none; 
+}
+@media(min-width: 768px){
+	.letras2{
+	display: block;
+	}
+}
+/**tayta imababura**/
+
+@media(min-width: 768px) {
+	.taytaimbabura{
+	margin-top: 1rem;
+	height: 29rem;
+	background-color: #000;
+	display: flex;
+	align-items: center;
+}
+.imagen3{
+	width: 23rem;
+	margin-left: 9rem;
+}
+.letras3{
+	color: #fff;
+	text-align: center;
+	margin-left: 2rem;
+}
+.letras3 h1{
+	text-shadow: 0 0 8px #fff;
+}
+}
+.letras3{
+display: none; 
+}
+@media(min-width: 768px){
+	.letras3{
+	display: block;
+	}
+}
+/**gente**/
+@media(min-width: 768px){
+	.gente{
+		display: flex;
+		align-items: center;
+	}
+	.imagen4{
+		width: 75rem;
+	}
+	.letras4{
+		text-align: center;
+	}
+}
+/**NOSOTROS**/
+@media(min-width: 768px){
+	.nosotros{
+		background-color: #000;
+		display: flex;
+		align-items: center;
+		}
+	.imgnosotros{
+		width: 158rem;
+		margin-left: 3rem;
+		padding: 49px 70px;
+	}
+	.textnosotros{
+	margin-right: 2rem;
+    color: #fff;
+    text-align: center;
+    line-height: 1.8rem;
+	}
+	.textnosotros h2{
+     font-family: 'EB Garamond', serif;
+     font-size: 4rem;
+	}
+}
